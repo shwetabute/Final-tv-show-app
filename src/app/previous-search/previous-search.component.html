@@ -1,0 +1,20 @@
+
+<h2 style="text-align: left">Based on your previous search......</h2>
+<div class = "row">
+  <div *ngIf = "current">
+    <div style = "display:inline-block" *ngFor = "let i of current">
+        <div class = "col-lg-3 col-md-6">
+          <section>
+            //<h2 style="text-align: left">Based on your previous search......</h2>
+              <div><a [href] = 'i.url'><img [src]='i.image'/></a></div>
+              <br/>
+              <!--  <h2>{{i.image}}</h2>   -->
+              <h3 style = "display:inline-block; text-align:right" > <a [href] = 'i.url'>{{i.name}}</a></h3>
+              <h3 style = "display:inline-block; text-align:left" >{{i.rating}}</h3>
+              <!-- <span>{{i.genres}} | {{i.language}}</span> 
+              <p>{{i.summary}}</p>-->
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>

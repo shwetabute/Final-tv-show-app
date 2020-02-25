@@ -1,0 +1,15 @@
+<p></p>
+<div class = "row">
+  <div *ngIf = "show">
+    <div style = "display:inline-block" *ngFor = "let i of show">
+        <div class = "col-lg-3 col-md-6">
+          <section>
+              <div><a [href] = 'i.url'><img [src]='i.image'/></a></div>
+              <br/>
+              <h3 style = "display:inline-block; text-align:right" > <a [href] = 'i.url'>{{i.name}}</a></h3>
+              <h3 style = "display:inline-block; text-align:left" >{{i.rating}}</h3>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
