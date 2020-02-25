@@ -1,10 +1,13 @@
 
-<h2 style="text-align: left">Based on your previous search......</h2>
+<!-- <h2 style="text-align: left">Based on your previous search......</h2> -->
 <div class = "row">
   <div *ngIf = "current">
     <div style = "display:inline-block" *ngFor = "let i of current">
         <div class = "col-lg-3 col-md-6">
           <section>
+            <div>
+              hello Pooja n Noor
+            </div>
             //<h2 style="text-align: left">Based on your previous search......</h2>
               <div><a [href] = 'i.url'><img [src]='i.image'/></a></div>
               <br/>
